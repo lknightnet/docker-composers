@@ -9,7 +9,7 @@ services:
     working_dir: /var/www/front
     command: sh -c "npm install && npm run dev -- --host"
     volumes:
-      - ./bashautocom:/var/www/front
+      - ./currentdirectory:/var/www/front
     tty: true
 
     container_name: frontend
